@@ -1,0 +1,28 @@
+@import 'variables';
+
+@import "../../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "../../node_modules/bootstrap/scss/images.scss";
+@import "../../node_modules/bootstrap/scss/utilities.scss";
+
+@import 'header';
+@import 'nav';
+@import 'footer';
+@import 'stringifier';
+
+
+body {
+    background: rgb(236, 236, 236);
+}
+
+.kruu {
+    background: $color_background;
+}
+
+.kruu__content {
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+    position: relative;
+    transition: padding 0.3s;
+}
+

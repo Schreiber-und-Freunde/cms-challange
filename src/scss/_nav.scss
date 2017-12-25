@@ -1,0 +1,139 @@
+@import "variables";
+
+.nav--secondary {
+  margin-left: 1rem;
+}
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.nav__list--primary {
+  display: flex;
+  line-height: 4.5rem;
+}
+
+.nav__list--service-header {
+  display: flex;
+  line-height: 3.125rem;
+}
+
+.nav__list--icons {
+  font-size: 1.5rem;
+}
+
+.nav__list--secondary {
+  position: absolute;
+  z-index: -1;
+  transform: translateY(-100%);
+  left: -1.5rem;
+  background: $color_background;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+  line-height: 2rem;
+  padding: 0.5rem 0;
+  opacity: 0;
+  transition: all 0.1s ease-out;
+}
+
+.nav__list--services {
+  position: absolute;
+  z-index: -1;
+  background: $color_background;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.15);
+  line-height: 2rem;
+  padding: 0.5rem 1rem;
+  left: -1rem;
+  opacity: 0;
+  transition: all 0.1s ease-out;
+  transform: translateY(-100%);
+  top: 3.125rem;
+}
+
+.nav__list__point {
+  position: relative;
+  white-space: nowrap;
+  &:active,
+  &:focus,
+  &:hover {
+    .nav__list--secondary {
+      opacity: 1;
+      transform: translateY(0);
+      top: 4.5rem;
+      left: -1.5rem;
+    }
+
+    .nav__list--services {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+.nav__list__point--icon {
+  &:last-child {
+    margin-right: 1.5rem;
+  }
+}
+
+.nav__list__point__link {
+  margin: 0 0.75rem;
+  color: $color-text;
+  display: block;
+  &:active,
+  &:focus,
+  &:hover {
+    color: $color-text;
+  }
+
+  .nav__list--secondary & {
+    margin: 0 1.5rem;
+  }
+}
+
+.nav__list__point__link--icon {
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.nav__list__point__link--footer {
+  margin: 0;
+  color: $color-text-footer;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: $color-text-footer;
+  }
+}
+
+.nav__list__point__link--secondary {
+  color: $color-text-light;
+  &:active,
+  &:focus,
+  &:hover {
+    color: $color-text-light;
+  }
+}
+
+.nav__list__point__link--with-arrow {
+  font-weight: $font-weight-bold;
+  &:after {
+    content: "";
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 6px;
+    margin: 0 0 0 0.5rem;
+    background: url(/images/show-more--arrow-bottom.svg);
+    background-size: cover;
+  }
+}
+
+.nav__list__point__link--active {
+  font-weight: $font-weight-bold;
+}

@@ -1,0 +1,30 @@
+.footer {
+  background: $color-background-footer;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem 3rem;
+  color: $color-text-footer;
+  font-size: 0.875rem;
+}
+
+.footer__column {
+  width: 30%;
+}
+
+.footer__column__headline {
+  margin-top: 3rem;
+  font-weight: $font_weight_bold;
+  border-bottom: 1px solid $color-text-footer;
+  font-size: 0.875rem;
+}
+
+.footer__payment_methods {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.footer--extended {
+  padding-bottom: 11rem;
+}
