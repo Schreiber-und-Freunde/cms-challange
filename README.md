@@ -1,12 +1,14 @@
 # Your task
 This example project is a lightweight version of an CMS component renderer. 
-Your task is to create 4 components representing data coming from ./src/mock-data/page.js.
+Your task is to create 5 components representing data coming from ./src/mock-data/page.js.
 Currently only one component called “Stringifier” is rendering all components coming from the CMS 
 (this looks pretty ugly right now ;-)).
 
+PRO TIP: Find an abstract approach since there will be A LOT OF components.
+
 ## Scripting
 Your starting point is ./src/App.js. PageData is passed down to CMSPage container. CMSPage renders the ‘Stringifier’ component.
-You have to replace the ‘Stringifier’ with your own solution to render those 4 components differently.
+You have to replace the ‘Stringifier’ with your own solution to render those 5 components differently.
 How they will look like is up to. You can just use simple HTML5 representations of them.
 
 ## Styling
